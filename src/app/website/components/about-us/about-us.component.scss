@@ -1,0 +1,88 @@
+/* ================= ABOUT DARK ================= */
+.about-dark {
+  background: rgb(11, 15, 26);
+  padding: 120px 0;
+  color: #fff;
+  position: relative;
+}
+
+/* HEADING (more thin + spaced like design) */
+.about-heading {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+  max-width: 900px;
+}
+
+/* GRID (spacing like reference) */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px 80px;
+}
+
+/* ITEM */
+.about-item {
+  max-width: 320px;
+}
+
+/* ICON (minimal like design) */
+.icon {
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #bbb;
+}
+
+/* TITLE */
+.about-item h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.about-item p {
+  font-size: 15px;
+  color: #888;
+  line-height: 1.7;
+}
+
+/* BIG BACKGROUND TEXT */
+.about-dark::before {
+  content: "ABOUT";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  font-size: 260px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.02);
+  pointer-events: none;
+}
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  .about-heading {
+    font-size: 30px;
+  }
+      .about-dark::before {
+  font-size: 100px !important;
+
+}
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-heading {
+    font-size: 24px;
+  }
+}

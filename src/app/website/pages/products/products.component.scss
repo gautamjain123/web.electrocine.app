@@ -1,0 +1,123 @@
+/* ================= HERO ================= */
+.products-hero {
+  background: linear-gradient(135deg, #0b0f1a, #111827);
+  color: #fff;
+  padding: 140px 0;
+}
+
+.products-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.products-hero p {
+  color: #aaa;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* ================= FILTER ================= */
+.filter-bar {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.filter-bar label {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* ================= CATEGORY ================= */
+.category-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.category-title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #0a58ff;
+  display: block;
+  margin-top: 8px;
+}
+
+/* ================= SUB SECTION ================= */
+.sub-section {
+  margin-bottom: 50px;
+}
+
+.sub-header h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ================= PRODUCT CARD ================= */
+.product-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  height: 100%;
+  border: 1px solid #eee;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* TEXT */
+.product-card h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.specs p {
+  font-size: 13px;
+  color: #555;
+}
+
+/* FOOTER */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* PRICE */
+.price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0a58ff;
+}
+
+/* BUTTON */
+button {
+  background: linear-gradient(135deg, #0a58ff, #4b7cff);
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .products-hero h1 {
+    font-size: 28px;
+  }
+}

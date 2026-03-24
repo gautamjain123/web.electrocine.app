@@ -1,1 +1,26 @@
-<p>header works!</p>
+<header class="main-header">
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <img src="../../../assets/icon/electrocine-logo.png"
+         alt="electrocine"
+         class="logo"
+         [routerLink]="''"
+         draggable="false"/>
+
+    <!-- NAV LINKS -->
+    <ul class="nav-links" [class.active]="menuOpen">
+      <li>About Us</li>
+      <li [routerLink]="'products'">Products</li>
+      <li><button class="nav-btn">Get In Touch</button></li>
+    </ul>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" (click)="toggleMenu()">
+      <span [class.open]="menuOpen"></span>
+      <span [class.open]="menuOpen"></span>
+      <span [class.open]="menuOpen"></span>
+    </div>
+
+  </div>
+</header>

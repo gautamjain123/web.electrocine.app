@@ -1,0 +1,99 @@
+/* CARD BASE */
+.category-card {
+  position: relative;
+  height: 230px;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease-in-out;
+}
+
+/* OVERLAY */
+.category-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.2)
+  );
+  transition: all 0.4s ease-in-out;
+}
+
+/* CONTENT */
+.category-card .content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TITLE */
+.category-card h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ARROW */
+.arrow {
+  font-size: 22px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+/* 🔥 HOVER EFFECT */
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+/* OVERLAY LIGHT EFFECT */
+.category-card:hover .overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.9),
+    rgba(0,0,0,0.1)
+  );
+}
+
+/* ARROW ANIMATION */
+.category-card:hover .arrow {
+  transform: translateX(8px);
+}
+
+/* 🔥 IMAGE BACKGROUNDS (YOU ADD YOUR IMAGES) */
+
+.indoor {
+  background: url('../../../../assets/images/indoor.webp') center/cover;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease;
+}
+
+.outdoor {
+  background: url('../../../../assets/images/outdoor.jpeg') center/cover;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease;
+}
+
+.industrial {
+  background: url('../../../../assets/images/industrial.jpg') center/cover;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease;
+}
+
+.architectural {
+  background: url('../../../../assets/images/archi.jpg') center/cover;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease;
+}
